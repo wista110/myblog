@@ -1,5 +1,5 @@
-"use client"
-import { motion } from "framer-motion"
+ï»¿'use client'
+import { motion } from 'framer-motion'
 
 export default function Hero() {
   return (
@@ -18,7 +18,7 @@ export default function Hero() {
         transition={{ duration: 0.6, delay: 0.1 }}
         className="mt-4 text-base sm:text-lg text-gray-500"
       >
-        Žï–¡ƒvƒƒOƒ‰ƒ}[ / ƒ‚ƒoƒCƒ‹ƒtƒ@[ƒXƒg / Next.js + Tailwind CSS
+        è¶£å‘³ãƒ—ãƒ­ã‚°ãƒ©ãƒžãƒ¼ / ãƒ¢ãƒã‚¤ãƒ«ãƒ•ã‚¡ãƒ¼ã‚¹ãƒˆ / Next.js + Tailwind CSS
       </motion.p>
     </section>
   )

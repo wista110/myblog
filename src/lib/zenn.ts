@@ -1,6 +1,4 @@
-// Zenn RSS ‚ğæ“¾‰ğÍ‚·‚éƒwƒ‹ƒp[
-// Ql: https://zenn.dev/dfuji (RSS: /feed)
-import Parser from "rss-parser"
+ï»¿import Parser from 'rss-parser'
 
 export type ZennArticle = {
   title: string
@@ -8,7 +6,7 @@ export type ZennArticle = {
   isoDate?: string
 }
 
-const RSS_URL = "https://zenn.dev/dfuji/feed"
+const RSS_URL = 'https://zenn.dev/dfuji/feed'
 
 export async function fetchZennArticles(limit: number = 5): Promise<ZennArticle[]> {
   try {
@@ -16,8 +14,8 @@ export async function fetchZennArticles(limit: number = 5): Promise<ZennArticle[
     const feed = await parser.parseURL(RSS_URL)
     const items = (feed.items ?? []).slice(0, limit)
     return items.map((it) => ({
-      title: it.title ?? "Untitled",
-      link: it.link ?? "#",
+      title: it.title ?? 'Untitled',
+      link: it.link ?? '#',
       isoDate: it.isoDate,
     }))
   } catch {

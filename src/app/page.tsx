@@ -1,8 +1,8 @@
-import Hero from "@/components/Hero"
-import About from "@/components/About"
-import Projects from "@/components/Projects"
-import Blog from "@/components/Blog"
-import Contact from "@/components/Contact"
+ï»¿import Hero from '@/components/Hero'
+import About from '@/components/About'
+import Projects from '@/components/Projects'
+import Blog from '@/components/Blog'
+import Contact from '@/components/Contact'
 
 export default function Page() {
   return (
@@ -10,11 +10,11 @@ export default function Page() {
       <Hero />
       <About />
       <Projects />
-      {/* Blog ‚Íƒrƒ‹ƒh‚É Zenn RSS ‚ğæ“¾‚µ‚Ü‚· */}
-      {/* ‹L–‚ª‹ó‚Å‚à•\¦‚ÍŒp‘±‚µ‚Ü‚· */}
-      {/* Œã‚ÅƒXƒ^ƒCƒ‹‚âƒAƒjƒ[ƒVƒ‡ƒ“‚ğ‹­‰»‚µ‚Ü‚· */}
-      {/* once. ‚Ì•µˆÍ‹C‚É‡‚í‚¹‚Ä’iŠK“I‚É’²® */}
-      {/* Mobile-first ‚Åƒ^ƒCƒ|‚â—]”’‚ğ’²® */}
+      {/* Blog ã¯ãƒ“ãƒ«ãƒ‰æ™‚ã« Zenn RSS ã‚’å–å¾—ã—ã¾ã™ */}
+      {/* è¨˜äº‹ãŒç©ºã§ã‚‚è¡¨ç¤ºã¯ç¶™ç¶šã—ã¾ã™ */}
+      {/* å¾Œã§ã‚¹ã‚¿ã‚¤ãƒ«ã‚„ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ã‚’å¼·åŒ–ã—ã¾ã™ */}
+      {/* once. ã®é›°å›²æ°—ã«åˆã‚ã›ã¦æ®µéšçš„ã«èª¿æ•´ */}
+      {/* Mobile-first ã§ã‚¿ã‚¤ãƒã‚„ä½™ç™½ã‚’èª¿æ•´ */}
       <Blog />
       <Contact />
     </main>
