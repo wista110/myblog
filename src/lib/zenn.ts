@@ -1,5 +1,5 @@
 // Zenn RSS を取得解析するヘルパー
-// ソース: https://zenn.dev/dfuji (RSS: /feed)
+// 参考: https://zenn.dev/dfuji (RSS: /feed)
 import Parser from "rss-parser"
 
 export type ZennArticle = {
@@ -20,8 +20,7 @@ export async function fetchZennArticles(limit: number = 5): Promise<ZennArticle[
       link: it.link ?? "#",
       isoDate: it.isoDate,
     }))
-  } catch (e) {
-    // 失敗時もビルドを継続するため空配列を返す
+  } catch {
     return []
   }
 }
